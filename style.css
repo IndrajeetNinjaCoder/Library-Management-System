@@ -1,0 +1,576 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.index_container::before {
+    content: "";
+    background-image: url("img/bg1.jpg");
+    background-size: 100% 100%;
+    /* opacity: 0.9; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+    background-repeat: no-repeat;
+}
+
+img.logo {
+    position: absolute;
+    top: 145px;
+    left: 47px;
+}
+
+/* Designing Home Page  */
+.library_fullForm {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 1px 6px white;
+}
+
+.library_fullForm h2 {
+    font-size: 30px;
+}
+
+ul.slogen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* color: white; */
+}
+
+ul.slogen li {
+    margin: 3px;
+    font-size: 24px;
+}
+
+ul {
+    display: flex;
+}
+
+marquee {
+    margin-top: 20px;
+}
+
+marquee h1 {
+    text-align: unset;
+    margin: 0px;
+    font-size: 60px;
+    text-shadow: 4px 3px 2px #d82f2f;
+    color: rgb(45 224 69);
+}
+
+h1.index {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 40px 0px 0px 0px;
+    font-size: 40px;
+    text-shadow: 3px 3px 2px tomato;
+
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 40px 0px 0px 0px;
+    font-size: 30px;
+
+}
+
+h3 {
+    color: red;
+}
+
+
+.table_books {
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    margin: 15px 0px;
+}
+
+.book_records tr td {
+    font-size: 18px;
+}
+
+table {
+    min-width: 851px;
+    border-radius: 5px;
+
+    /* border: 2px solid rgb(45, 224, 69); */
+    /* border: 2px solid rgb(45, 224, 69); */
+}
+
+table tr:first-child {
+    background-color: #1089ff;
+}
+
+table tr:nth-child(even) {
+    background-color: yellow;
+}
+
+/* table tr:nth-child(odd) {
+    background-color: tomato;
+} */
+
+
+
+table tr:last-child td:first-child {
+    border-radius: 0px 0px 0px 10px;
+}
+
+table tr:last-child td:last-child {
+    border-radius: 0px 0px 10px 0px;
+}
+
+table tr:hover {
+    background: chartreuse;
+}
+
+th {
+    font-size: 22px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+th:first-child {
+    min-width: 70px;
+    border-radius: 10px 0px 0px 0px;
+}
+
+th:last-child {
+    border-radius: 0px 10px 0px 0px;
+}
+
+td {
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 23px;
+    padding-right: 10px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+td:first-child {
+    text-align: center;
+}
+
+/* .hide {
+    display: none;
+} */
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 54px;
+    border: 2px solid black;
+    background: #252525;
+}
+
+ul.menu {
+    display: flex;
+
+}
+
+li {
+    list-style: none;
+    border-radius: 5px;
+    font-size: 21px;
+    height: 20px;
+}
+
+li a {
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+li a:hover {
+    background: #1089ff;
+    cursor: pointer;
+    color: white;
+}
+
+
+li:first-child {
+    background: none;
+}
+
+li:first-child a {
+    color: white;
+}
+
+li.username_logo a:hover {
+    background: none;
+}
+
+/* li:first-child a:hover {
+    background: none;
+} */
+
+li:nth-child(3) {
+    position: relative;
+    /* color: red; */
+}
+
+/* li:nth-child(3) a {
+    color: red;
+} */
+
+/* Form  */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+
+
+form.searchbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 17px auto -5 px auto;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+}
+
+
+input {
+    margin: 7px;
+    font-size: 18px;
+    padding: 9px;
+    border: 2px solid green;
+    border-radius: 9px;
+    width: 350px;
+
+}
+
+#branch, #semester, #userType {
+    margin: 7px;
+    font-size: 18px;
+    padding: 9px;
+    border: 2px solid green;
+    border-radius: 9px;
+    width: 372px;
+
+}
+
+input[type="submit"] {
+    width: 150px;
+    background: #04aa6d;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+.footer {
+    background-color: #252525;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    /* position: absolute;
+    bottom: 0px;
+    width: 98.7%; */
+}
+
+.student_signup {
+    margin-bottom: 225px;
+}
+
+/* 
+.admin_signup {
+    margin-bottom: 339px;
+} */
+
+.student_login {
+    margin-bottom: 396px;
+}
+
+.admin_login {
+    margin-bottom: 396px;
+}
+
+.admin_signup {
+    margin-bottom: 339px;
+}
+
+/* .table_books.mybooks {
+    margin-bottom: 404px;
+} */
+
+
+td a {
+    text-decoration: none;
+    background: #04aa6d;
+    padding: 3px 8px;
+    border-radius: 5px;
+    color: white;
+}
+
+td.book_details a {
+    background: none;
+    color: blue;
+    text-decoration: underline;
+}
+
+.book_operation {
+    margin-top: 25px;
+}
+
+.book_operation ul li a {
+    color: white;
+    border: 1px solid white;
+    background: tomato;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 4px 5px 3px #414141;
+}
+
+.book_operation ul li a:hover {
+    padding: 12px;
+    box-shadow: none;
+}
+
+.confirmBox {
+    background: tomato;
+    height: 250px;
+    margin: 13px 405px;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 9px 12px 8px grey;
+}
+
+form.confirm {
+    display: flex;
+    flex-direction: revert;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Admin Settings  */
+img#admin_logo {
+    display: block;
+    margin: auto;
+    width: 387px;
+    margin-top: 22px;
+}
+
+img.edit_pen {
+    width: 50px;
+    position: relative;
+    top: -50px;
+    left: 828px;
+
+}
+
+.admin {
+    margin: 10px;
+}
+
+.profile {
+    margin-bottom: -38px;
+}
+
+label {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 9px;
+    margin-bottom: -8px;
+}
+
+/* Approval Message  */
+.message {
+    border: 2px solid black;
+    padding: 10px 10px 0px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background: lightgreen;
+}
+
+h1.approval {
+    text-align: left;
+    margin: 30px 14px 10px;
+}
+
+.message p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.message .buttons {
+    position: relative;
+    left: 76rem;
+    top: -1rem;
+}
+
+.message .buttons a {
+    text-decoration: none;
+    padding: 5px 8px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: auto 6px;
+    color: white;
+}
+
+#check {
+    background: #2b21c4;
+}
+
+#accept {
+    background: #088800;
+}
+
+#deny {
+    background: red;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 5px 8px;
+    border: 2px solid black;
+    background: red;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: auto 6px;
+    color: white;
+    position: relative;
+    top: 12px;
+}
+
+/* admin_books.php  */
+
+/* Left Box  */
+.left_box.total_books {
+    width: fit-content;
+    margin-left: 211px;
+    padding: 6px;
+}
+
+.left_box h2 {
+    font-size: 18px;
+}
+
+.left_box h3 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Right Box  */
+.right_box.total_books {
+    width: fit-content;
+    margin-left: 211px;
+    padding: 6px;
+    position: absolute;
+    top: 23.5rem;
+    right: 15rem;
+}
+
+.right_box h2 {
+    font-size: 18px;
+}
+
+.right_box h3 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 39px;
+    background-color: black;
+    min-width: 178px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #1089ff;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #1089ff;
+}
